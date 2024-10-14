@@ -120,6 +120,8 @@ The server will start on `http://0.0.0.0:8188`.
 
 ### Using Docker
 
+The project is containerized using Docker, making it easy to deploy and manage in various environments.
+
 1. Ensure Docker and Docker Compose are installed on your system.
 
 2. Build and run the Docker container:
