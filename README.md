@@ -100,6 +100,7 @@ This project makes use of GPU acceleration for model inference, though the usage
 - RAM: 64 GB
 - VRAM: 24 GB x 2
 - GPU Model: NVIDIA RTX-4090 x 2
+- Ubuntu 22.04
 
 ### Locally
 
