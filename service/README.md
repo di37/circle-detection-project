@@ -30,7 +30,7 @@ Output:
 ```
 
 2. `POST /get_annotated_circle_image/`
-   - Generates and returns an annotated image with bounding boxes and masks of the image that has been uploaded and its information is stored in the database
+   - Generates and returns an annotated image with bounding boxes and masks of the image that has been uploaded and its information is stored in the database. Along with annotated image, also includes the mask (as mentioned in the assignment).
    - Parameters: `image_name` (ImageName)
    - Returns: StreamingResponse with the processed image
 
@@ -106,6 +106,7 @@ Output:
    - Returns: CircleProperties containing bounding box, center point, and radius of the inquired image
 
 Input:
+
 ```json
 {
   "image_name": "00db272e-1d5f-4ff1-9cd6-1d8be42cb1a5_jpg.rf.f5818b173262a6f187db2af748531648.jpg",
@@ -114,20 +115,15 @@ Input:
 ```
 
 Output:
+
 ```json
 {
-    "circle_id": 4,
-    "bounding_box": [
-        182.64999389648438,
-        172.73851013183594,
-        326.9499816894531,
-        322.030517578125
-    ],
-    "center_point": [
-        254.79998779296875,
-        247.38451385498047
-    ],
-    "radius": 72.14999389648438
+  "circle_id": 4,
+  "bounding_box": [
+    182.64999389648438, 172.73851013183594, 326.9499816894531, 322.030517578125
+  ],
+  "center_point": [254.79998779296875, 247.38451385498047],
+  "radius": 72.14999389648438
 }
 ```
 

@@ -89,6 +89,18 @@ Also check out the README files under each of the folders for further implementa
 
 ## Running the Project
 
+### System Project was developed
+
+This project makes use of GPU acceleration for model inference, though the usage is minimal as the model size is just 1.54GB. Below are the system specifications:
+
+- CPU:
+  - Family: 25
+  - Model: 8
+  - Model Name: AMD Ryzen Threadripper PRO 5975WX 32-Cores
+- RAM: 64 GB
+- VRAM: 24 GB x 2
+- GPU Model: NVIDIA RTX-4090 x 2
+
 ### Locally
 
 1. Clone the repository:
