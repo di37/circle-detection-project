@@ -12,6 +12,26 @@ This project implements an advanced circle detection system using Microsoft's Fl
 
 By leveraging Florence2, we aim to overcome common challenges in circle detection, making our system robust across various scenarios.
 
+## Key Features
+
+- Image upload and storage in persistent storage
+- Unique identifier assignment for each detected circular object
+- Retrieval of circular objects with their bounding boxes
+- Calculation of bounding box, centroid, and radius for each circular object
+- Model/algorithm evaluation strategy
+- Containerized solution for easy deployment
+
+## Implementation Details
+
+The solution is based on Python and utilizes various computer vision libraries. Here's a brief overview of the main components:
+
+- **Image Upload Endpoint** - `POST /upload_image/`: Allows users to upload images and stores them in persistent storage. Also circles detection, assigning them unique identifiers, and calculating details like center point, radius takes place when this api is hit. These details are stored in the database.
+- **Visualization** - `POST /get_annotated_circle_image/`: Displays the original image and the segmentation mask in the same window.
+- **Object Retrieval** - `POST /get_circle_data/`: Provides an endpoint to retrieve a list of all circular objects with their bounding boxes. Also `POST /get_circle_properties/` allows to get details about specific circle of the given image as we pass its name.
+- **Model Evaluation**: Model evaluated on how good the model is. Please check `model_evaluation` folder. Results are described in depth in the README file.
+
+Also check out the README files under each of the folders for further implementation details.
+
 ## Project Structure
 
 ```bash
@@ -79,13 +99,6 @@ By leveraging Florence2, we aim to overcome common challenges in circle detectio
         ├── 1.png
         └── 2.png
 ```
-
-**Important Note:**
-
-- API Endpoints implemented in `services` folder. API usage can be found in README file.
-- Model that has been used for the project is evaluated and results included in `model_evaluation` folder. Results described in its README file.
-
-Also check out the README files under each of the folders for further implementation details.
 
 ## Running the Project
 

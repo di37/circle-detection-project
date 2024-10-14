@@ -14,7 +14,7 @@ This module provides functionality for detecting circular objects in images usin
 1. `__init__(self, model_id: str = MODEL_ID) -> None`: Initializes the CircleDetector with a specified model.
 2. `detect_circles(self, task_prompt: str, image: Image.Image, text_input: Optional[str] = None) -> Dict[str, Any]`: Detects circles and returns bounded boxes and respective labels in a given image using the model.
 3. `get_circle_data(self, image_path: str) -> Dict[str, Any]`: Processes an image file and returns detailed circle data.
-4. `_calculate_circle_properties(self, image_path: str, result: Dict[str, Any]) -> Dict[str, Any]`: Internal method to calculate circle properties from detection results.
+4. `_calculate_circle_properties(self, image_path: str, result: Dict[str, Any]) -> Dict[str, Any]`: Internal method to calculate circle properties from detection results. Here unique id is assigned to each circle of a given input image. Center point and radius are also calculated here.
 
 ## Global Variables
 

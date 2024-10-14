@@ -49,7 +49,7 @@ Output:
 3. `POST /get_circle_data/`
    - Retrieves data for all circles detected in a specified image
    - Parameters: `image_name` (ImageName)
-   - Returns: CircleData containing image names, circle count, and metadata - bounding box, center point, and radius
+   - Returns: CircleData containing image names, circle count, and metadata - circle_id, bounding box, center point, and radius
 
 Input:
 
@@ -103,7 +103,7 @@ Output:
 4. `POST /get_circle_properties/`
    - Retrieves properties of a specific circle detected in an image
    - Parameters: `image_circle_request` (ImageCircleRequest)
-   - Returns: CircleProperties containing bounding box, center point, and radius of the inquired image
+   - Returns: CircleProperties containing circle_id, bounding box, center point, and radius of the inquired circle of the image that is passed.
 
 Input:
 
