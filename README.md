@@ -1,8 +1,9 @@
 # Circle Detection API
 
-This project aims to detect circles in images using a pre-trained machine learning model - Florence2, providing detailed information such as bounding boxes, center points, and radius of each detected circle.  
+This project aims to detect circles in images using a pre-trained machine learning model - Florence2, providing detailed information such as bounding boxes, center points, and radius of each detected circle.
 
 ## Solution
+
 This project implements an advanced circle detection system using Microsoft's Florence2 model, a state-of-the-art vision model that combines natural language understanding with computer vision capabilities. Our solution provides:
 
 1. Accurate circle detection and counting in images
@@ -11,7 +12,7 @@ This project implements an advanced circle detection system using Microsoft's Fl
 
 By leveraging Florence2, we aim to overcome common challenges in circle detection, making our system robust across various scenarios.
 
-## Project Structure 
+## Project Structure
 
 ```bash
 ├── circle_detector
@@ -79,25 +80,33 @@ By leveraging Florence2, we aim to overcome common challenges in circle detectio
         └── 2.png
 ```
 
-Check out the README files under each of the folders for more details.
+**Important Note:**
+
+- API Endpoints implemented in `services` folder. API usage can be found in README file.
+- Model that has been used for the project is evaluated and results included in `model_evaluation` folder. Results described in its README file.
+
+Also check out the README files under each of the folders for further implementation details.
 
 ## Running the Project
 
 ### Locally
 
 1. Clone the repository:
+
    ```
    git clone https://github.com/yourusername/circle-detection-project.git
    cd circle-detection-project
    ```
 
 2. Set up a virtual environment (optional but recommended):
+
    ```
    conda create -n circle_detection_project python=3.11
    conda activate circle_detection_project
    ```
 
 3. Install dependencies:
+
    ```
    pip install -r requirements.txt
    ```
